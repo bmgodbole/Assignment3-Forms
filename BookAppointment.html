@@ -11,6 +11,7 @@
  <body>
  <section id="book-an-appointment">
  <form method="GET" enctype="multipart/form-data">
+ <input type="hidden" name="hfcname" value="Proactive Clinic">
  
  <table width="100%" bgcolor="#f2f2f2">
  <tr>
@@ -114,12 +115,26 @@ SERVICES *
    Current Patient <input type="checkbox" name="currP" value="agree" checked> <br>
 </td>
 </tr>
+<tr>
+<td>
+<td>
+   Upload aadhar card <input type="file" name="fileToUpload" accept="pdf/*,image/*">
+</td>
+
+</td>
+</tr>
 </tr>
 
 			<tr>
 			<td align="center">
-			    <input type = "submit"> 
+			
+			  <input type = "submit" value="Book" onclick="alert('booked') ;">
+ 				
             </td>
+			<td>
+			 <input type="reset"  >
+			</td>
+
  
   </tr>
   </table>
