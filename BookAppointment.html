@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="Appointment Form Demo">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Book Appoinment</title>
+ </head>
+ <body>
+ <section id="book-an-appointment">
+ <form method="GET" enctype="multipart/form-data">
+ 
+ <table width="100%" bgcolor="#f2f2f2">
+ <tr>
+ <td>
+ <h2> Book an appointment with us </h2>
+ </td>
+ <tr>
+ <td>
+ FIRST NAME *
+ </td>
+<td>
+ LAST NAME *
+ </td>
+
+ </tr>
+ <tr>
+ <td width="50%">
+	<input type = "text" name="txtFirstName" placeholder="FIRST NAME" required type="text" maxlength="30" size = "50"> <br>
+			</td>
+			<td width="50%">
+		<input placeholder="LAST NAME" required type="text" name="txtLastName" maxlength="30" size = "50"> <br>
+		
+			</td width="50%">
+</tr>
+<tr>
+<td> PHONE *
+</td>
+<td> 
+EMAIL *
+</td>
+</tr>
+<tr>
+<td width ="50%">
+ <input placeholder="PHONE"  required type="number" name="phNumber" maxlength="10" size = "50"> <br> <!-- how to validate phone number -->
+</td>
+<td width="50%"><input placeholder="EMAIL" required type="email" name="email" maxlength="30" size = "50"> <br>
+
+</td>
+</tr>
+<tr>
+<td>
+PREFERRED TIME *
+</td>
+<td> LOCATION *
+</td>
+</tr>
+<td width="50%">  
+   <select name="prefferdTime">
+   <option value = "MN"> MORNING </option>
+   <option value = "MD"> MID-DAY</option>
+   <option value = "EN"> EVENING </option>
+</select>
+</td>
+<td width="50%">  
+   <select name = "location">
+   <option value="" disabled selected>Please Select</option>
+   <option value = "100 St Lane"> 100 ST Lane , Pandora Ave </option>
+   <option value = "10 royal rd"> 10 Royal Rd , Stanberg st </option>
+   <option value = "88 central west"> 88 Central West , crossroad ave </option>
+</select>
+</td>
+</tr>
+<tr>
+<td>DATE * 
+
+</td>
+<td> TIME *
+</td>
+
+</tr>
+<tr>
+<td width="50%"> 
+<input name="appDt" type="date">
+</td>
+<td> <input  name="appTime" type="time">
+</td>
+</tr>
+<tr>
+<td>
+SERVICES *
+</td>
+</tr>
+<tr>
+<td>
+ 
+<select name="services" multiple>
+    <option value = ""> PRE /POST SURGICAL REHABILITATION</option>
+   <option value = ""> NECK UPPER &amp; LOW BACK REHABILITATION</option>
+   <option value = ""> ORTHOPEDICS &amp; SPORTS RELATED REHABILITATION </option>
+    <option value = ""> PHYSICAL THEARAPY </option>
+	<option value = " "> GERIATRIC CARE </option>
+</select>
+</td>
+<tr>
+<td> GENDER 
+       <input type="radio" name = "gender" value="M" checked> Male 
+	   <input type="radio" name = "gender" value="F"> Female 
+       <input type="radio" name = "gender" value="T" > Trans  
+	   </td>
+<td> 
+   Current Patient <input type="checkbox" name="currP" value="agree" checked> <br>
+</td>
+</tr>
+</tr>
+
+			<tr>
+			<td align="center">
+			    <input type = "submit"> 
+            </td>
+ 
+  </tr>
+  </table>
+ </form>
+ </section>
+ </body>
+</html>
